@@ -133,6 +133,12 @@ textarea {
     margin: 30px 70px 10px 0px;
 }
 
+.clip-image {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
 .portfolio-label {
     background-color: cadetblue;
     color: white;
