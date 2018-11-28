@@ -1,149 +1,77 @@
 body{
-    margin: 0;
-    background-color: lightgray;
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    border-bottom: lightgray solid 2px;
-    font-size: 18px;
-}
-
-section {
-}
-
-footer {
-    text-align: center;
-    vertical-align: bottom;
-    color: lightgray;
-    background-color: darkgray;
-    border-top: cadetblue solid 5px;
-    padding: 10px 0px 3px 0px;
-    margin-top: 50px;
-}
-
-div {
-}
-
-nav {
-}
-
-h1 {
-}
-
-.spacer-1 {
-    flex: 1;
-}
-
-.name {
-    background-color: cadetblue;
-    color: white;
-    height: 100%;
-    padding: 5px 10px;
-    flex: 1;
-    text-align: center;
-}
-
-.spacer-auto{
-    flex: 2;
+    background: #819ca9;
 }
 
 .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    text-align: center;
-    flex: 1;
+    background: #29434e;
+    padding: 0px;
+    margin-bottom: 10px;
 }
 
-.navbar > a {
-    padding: 5px 10px;
-    display: inline-block;
-    vertical-align: middle;
-    margin: auto;
-    padding: 20px;
-    color: cadetblue;
-    background-color: lightgray;
+.navbar .container{
+    height: 100%;
+}
+.navbar-brand {
+    background: #4db6ac;
+    height: 100%;
+    border-radius: 0px 0px 10px 10px;
 }
 
-.main-content{
-    display: flex;
-    flex-direction: row;
+.navbar-brand h1 {
+    padding: 10px 15px 5px 15px;
+    color: #ffffff;
+}
+
+.navbar .nav-link {
+    color: #ffffff;
+    margin-left: 5px;
+    border-radius: 5px;
+    border-top: 5px solid #29434e;
+    padding-top: 10px;
+}
+
+.navbar .active{
+    border-top: 5px solid #4db6ac;
+}
+
+section.main {
+    background: #29434e;
+    border-radius: 10px;
+    color: #ffffff;
 }
 
 .info {
-    margin-top: 1%;
-    flex: 4;
-    background-color: white;
-    padding: 10px 20px;
+    padding: 15px;
 }
 
-.subtitle{
-    color: cadetblue;
-    border-bottom: lightgray solid 2px;
-    padding: 0px 0px;
-    font-size: 20px;
+hr {
+    border:1px solid #4db6ac;
 }
 
-.content{
+#profile_image {
+    padding: 0px 15px 15px 0px;
+    width: 30%
 }
 
-.wrapimage {
-    align: left;
-    margin: 0px 20px;
+@media screen and (max-width: 992px){
+    #profile_image{
+        width: 40%;
+    }
 }
 
-#activepage {
-    color: white;
-    background-color: cadetblue;
+@media screen and (max-width: 768px){
+    #profile_image{
+        width: 50%;
+    }
 }
 
-input {
-    width: 100%;
-    padding: 5px 0px;
-    margin: 1% 0;
+@media screen and (max-width: 576px){
+    #profile_image{
+        width: 100%;
+    }
 }
 
-form {
-    margin-top: 2%;
-}
-
-.btn{
-    background-color: cadetblue;
-    color: white;
-    padding: 10px;
-    width: 10%;
-    font-size: 14px;
-}
-
-textarea {
-    width: 100%
-    padding: 5px 0px;
-    margin: 1% 0;
-}
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.portfolio-image {
-    margin: 30px 70px 10px 0px;
-}
-
-.clip-image {
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
-}
-
-.portfolio-label {
-    background-color: cadetblue;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 22%;
+.main a {
+    color: #4db6ac;
+    font-weight: bold;
 }
