@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -8,20 +8,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
-<body>
-
-<!-- header section -->
-    <header>
-        <!-- spacer of flex 1 -->
-        <div class="spacer-1"></div>
-        <!-- name block -->
-        <div class="name"><h1>Vivek Shimpi</h1></div>
-<!-- navigation bar -->
-        <div class="spacer-auto"></div>
-        <nav class="navbar">
-            <a href="index.html">About</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a id="activepage" href="#">Contact</a>
+<body class="page">
+    <div class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top navbar-expand-md" role="navigation">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><h1>Vivek Shimpi</h1></a>
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="nav-link text-center" href="index.html"><span class="fa fa-question"></span> About</a></li>
+                        <li><a class="nav-link text-center" href="portfolio.html"><span class="fa fa-book-open"></span> Portfolio</a></li>
+                        <li><a class="nav-link text-center active" href="#"><span class="fa fa-envelope"></span> Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
         <div class="spacer-1"></div>
     </header>
@@ -41,7 +45,8 @@
             <div class="subtitle">
                 <h1>Contact</h1>
             </div>
-
+            <!-- image and text content -->
+            <hr/>
             <form>
                 <label for="name">Name</label><br/>
                 <input id="name" type="text" placeholder="John Smith"><br/>
@@ -51,14 +56,21 @@
                 <textarea id="message" rows="10"></textarea><br/>
                 <input type="submit" value="Submit" class="btn">
             </form>
-
+            </div>
         </div>
-        <div class="spacer-1"></div>
     </section>
-
-    <!-- footer section -->
-    <footer>
-        <p>Copyright ©</p>
+    <footer class="row text-center">
+        <p class="col-12">Copyright ©</p>
     </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
