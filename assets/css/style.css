@@ -73,11 +73,18 @@ h1 {
     flex-direction: row;
 }
 
-.info {
+.info{
     margin-top: 1%;
     flex: 4;
     background-color: white;
     padding: 10px 20px;
+}
+
+.contact {
+    margin-top: 1%;
+    flex: 4;
+    background-color: white;
+    padding: 10px 20px;  
 }
 
 .subtitle{
@@ -146,4 +153,71 @@ textarea {
     padding: 10px 0;
     position: relative;
     bottom: 22%;
+}
+
+.subheader {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .spacer-auto {
+        flex: 1;
+    }
+    .spacer-1 {
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 576px) {
+    .spacer-auto {
+        display: none;
+    }
+    .header {
+        display: block;
+    }
+    .name {
+        
+    }
+    header > .navbar {
+        display: none;
+        top: 100px;
+    }
+    .subheader {
+        display: block; 
+    }
+    .gallery {
+        justify-content: center;
+    }
+    .portfolio-image {
+        margin-right: 0;
+    }
+    .clip-image {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .contact {
+        width: 80%;
+        margin-top: 1%;
+        flex: 4;
+        padding: 0;  
+        }
+    }
+    .btn {
+        width: 50%;
+    }
+
+    input {
+        width: 50%;
+        padding: 5px 0px;
+        margin: 1% 0;
+    }
+    
+    textarea {
+        width: 100%;
+        padding: 5px 0px;
+        margin: 1% 0;
+        overflow: hidden;
+    }
 }
